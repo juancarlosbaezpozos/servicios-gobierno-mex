@@ -1,1 +1,10 @@
 version = 1
+
+exclude_patterns = [
+  "bin/",
+  "obj/"
+]
+
+[[analyzers]]
+name = "csharp"
+enabled = true
