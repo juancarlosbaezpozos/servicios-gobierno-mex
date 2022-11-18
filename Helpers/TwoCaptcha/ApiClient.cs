@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
@@ -18,7 +18,7 @@ namespace TwoCaptcha
         /**
          * Network client
          */
-        private readonly HttpClient client = new HttpClient();
+        private readonly HttpClient client = new();
 
         public ApiClient()
         {

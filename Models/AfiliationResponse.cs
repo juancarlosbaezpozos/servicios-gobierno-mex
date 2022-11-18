@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 
 using System.Globalization;
@@ -107,14 +107,7 @@ namespace AltergoAPI.Nss.Core.Models
 
     internal static class ConverterAfiliationResponse
     {
-        public static readonly JsonSerializerSettings Settings = new JsonSerializerSettings
-        {
-            MetadataPropertyHandling = MetadataPropertyHandling.Ignore,
-            DateParseHandling = DateParseHandling.None,
-            Converters =
-            {
-                new IsoDateTimeConverter { DateTimeStyles = DateTimeStyles.AssumeUniversal }
-            },
-        };
+        public static readonly JsonSerializerSettings Settings = new()
+{MetadataPropertyHandling = MetadataPropertyHandling.Ignore, DateParseHandling = DateParseHandling.None, Converters = {new IsoDateTimeConverter{DateTimeStyles = DateTimeStyles.AssumeUniversal}}, };
     }
 }
